@@ -7,36 +7,86 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <script src="Grainless.js"></script>
+  
   <header>
-    <div><strong>Grainless</strong></div>
+    <div class="logo-section">
+      <a href="/" class="logo-link">
+        <img src="media/logo.png" alt="Grainless Logo" class="logo-image" />
+        <span class="logo-text">Grainless</span>
+      </a>
+    </div>
     <nav>
-      <a href="#">Головна</a>
-      <a href="#">Категорії</a>
-      <a href="#">Блог</a>
-      <a href="#">Контакти</a>
+      <a href="#" data-en="Home" data-uk="Головна">Головна</a>
+      <a href="#" data-en="Categories" data-uk="Категорії">Категорії</a>
+      <a href="#" data-en="Blog" data-uk="Блог">Блог</a>
+      <a href="#" data-en="Contact" data-uk="Контакти">Контакти</a>
     </nav>
   </header>
 
   <section class="hero">
-    <h1>Без глютену. Без компромісів.</h1>
-    <button class="btn-primary">Переглянути продукти</button>
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="video/Beauty Shot Bread Bun.mp4" type="video/mp4">
+      Ваш браузер не підтримує відео.
+    </video>
+    <div class="hero-content">
+      <div class="hero-panel">
+        <h1 data-en="Gluten-free. No compromises." data-uk="Без глютену. Без компромісів.">Без глютену. Без компромісів.</h1>
+        <button class="btn-primary" data-en="Browse Products" data-uk="Переглянути продукти">Переглянути продукти</button>
+      </div>
+    </div>
   </section>
 
   <section class="products">
     <div class="product-card">
-      <h3>Гречані макарони</h3>
-      <p>₴95</p>
+      <div class="product-image">
+        <img src="media/гречані макарони без глютену.png" alt="Гречані макарони">
+      </div>
+      <h3 class="product-title" data-en="Buckwheat Pasta" data-uk="Гречані макарони">Гречані макарони</h3>
+      <p class="product-price">₴95</p>
     </div>
+
     <div class="product-card">
-      <h3>Снеки без глютену</h3>
-      <p>₴45</p>
+      <div class="product-image">
+        <img src="media/снеки без глютену.png" alt="Снеки без глютену">
+      </div>
+      <h3 class="product-title" data-en="Gluten-free Snacks" data-uk="Снеки без глютену">Снеки без глютену</h3>
+      <p class="product-price">₴45</p>
     </div>
+
     <div class="product-card">
-      <h3>Безглютеновий хліб</h3>
-      <p>₴78</p>
+      <div class="product-image">
+        <img src="media/безглютеновий хліб.png" alt="Безглютеновий хліб">
+      </div>
+      <h3 class="product-title" data-en="Gluten-free Bread" data-uk="Безглютеновий хліб">Безглютеновий хліб</h3>
+      <p class="product-price">₴78</p>
     </div>
   </section>
 
-  <script src="main.js"></script>
+    <footer>
+    <div class="footer-content">
+      <!-- Контакти -->
+      <div class="footer-section">
+        <h4 data-en="Contact Us" data-uk="Контакти">Контакти</h4>
+        <p>Email: <a href="mailto:info@grainless.ua">info@grainless.ua</a></p>
+        <p data-en="Phone: +38 067 123 45 67" data-uk="Телефон: +38 067 123 45 67">Телефон: +38 067 123 45 67</p>
+      </div>
+
+      <!-- Соцмережі -->
+      <div class="footer-section">
+        <h4 data-en="Follow Us" data-uk="Ми в соцмережах">Ми в соцмережах</h4>
+        <a href="https://www.instagram.com/grainless" target="_blank">Instagram</a><br>
+        <a href="https://www.facebook.com/grainless" target="_blank">Facebook</a><br>
+        <a href="https://www.tiktok.com/@grainless" target="_blank">TikTok</a>
+      </div>
+
+      <!-- Перемикач мов -->
+      <div class="footer-section">
+        <h4 data-en="Language" data-uk="Мова">Мова</h4>
+        <button onclick="setLanguage('uk')">UA</button>
+        <button onclick="setLanguage('en')">EN</button>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

@@ -1,0 +1,16 @@
+@import "global/variables.scss";
+
+footer {
+  box-shadow: 0 -8px 0 $brown-dark;
+  background-color: $bg;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+}

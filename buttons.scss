@@ -1,0 +1,12 @@
+@import "global/_variables.scss";
+
+.btn-primary {
+  background-color: $choco;
+  color: $white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}

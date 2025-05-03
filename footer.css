@@ -1,0 +1,14 @@
+footer {
+  box-shadow: 0 -8px 0 #5e3b1e;
+  background-color: #FFFDF8;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+}/*# sourceMappingURL=footer.css.map */
